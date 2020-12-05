@@ -9,11 +9,12 @@ import java.util.List;
 
 
 public class Day4 {
-		List<Passport> input;
+	List<Passport> input;
+	
 	public Day4() {
 		input = readPassword(new File("input/4/input.txt"));
 		System.out.println("Solution Day 4, Part 1 : " + part1(input));
-		System.out.println("Solution Day 2, Part 2 : " + part2(input));
+		System.out.println("Solution Day 4, Part 2 : " + part2(input));
 	}
 	
 	private int part1(List<Passport> passports) {
@@ -64,19 +65,7 @@ public class Day4 {
 		
 		public Passport() {			
 		}
-		
-		public String toString() {
-			StringBuilder sb = new StringBuilder();
-			sb.append("Birth Year: ").append(byr).append("\n");
-			sb.append("Issue Year: ").append(iyr).append("\n");
-			sb.append("Expiration Year: ").append(eyr).append("\n");
-			sb.append("Height: ").append(hgt).append("\n");
-			sb.append("Hair Color: ").append(hcl).append("\n");
-			sb.append("Eye Color: ").append(ecl).append("\n");
-			sb.append("Passport ID: ").append(pid).append("\n");
-			return sb.toString();
-		}
-		
+			
 		public boolean add(String key, String value) {
 			switch (key) {
 			case "byr": 
@@ -123,6 +112,18 @@ public class Day4 {
 					ecl.matches("^amb|blu|brn|gry|grn|hzl|oth$") &&
 					pid.matches("^\\d{9}$");
 			return valid;
+		}
+		
+		public String toString() {
+			StringBuilder sb = new StringBuilder();
+			sb.append("Birth Year: ").append(byr).append("\n");
+			sb.append("Issue Year: ").append(iyr).append("\n");
+			sb.append("Expiration Year: ").append(eyr).append("\n");
+			sb.append("Height: ").append(hgt).append("\n");
+			sb.append("Hair Color: ").append(hcl).append("\n");
+			sb.append("Eye Color: ").append(ecl).append("\n");
+			sb.append("Passport ID: ").append(pid).append("\n");
+			return sb.toString();
 		}
 	}
 

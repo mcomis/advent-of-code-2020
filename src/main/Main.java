@@ -1,6 +1,6 @@
 package main;
 
-import puzzles.Day6;
+import puzzles.Day7;
 
 public class Main {
 
@@ -10,7 +10,8 @@ public class Main {
 //		new Day3();
 //		new Day4();
 //		new Day5();
-		new Day6();
+//		new Day6();
+		new Day7();
 	}
 
 }

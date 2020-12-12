@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day2 {
+public class Day02 {
 	List<PasswordRiddle> input;
-	public Day2() {
+	public Day02() {
 		input = readPassword(new File("input/2/input.txt"));
 		System.out.println("Solution Day 2, Part 1 : " + part1(input));
 		System.out.println("Solution Day 2, Part 2 : " + part2(input));

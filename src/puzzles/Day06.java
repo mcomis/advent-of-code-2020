@@ -5,9 +5,9 @@ import java.util.List;
 
 import input_reader.StringListListReader;
 
-public class Day6 {
+public class Day06 {
 	List<List<String>> input;
-	public Day6() {
+	public Day06() {
 		input = StringListListReader.readStringListList(new File("input/6/input.txt"));
 		System.out.println("Solution Day 6, Part 1 : " + part1(input));
 		System.out.println("Solution Day 6, Part 2 : " + part2(input));

@@ -5,10 +5,10 @@ import java.util.Arrays;
 
 import input_reader.CharArrayReader;
 
-public class Day5 {
+public class Day05 {
 	char[][] input;
 	
-	public Day5() {
+	public Day05() {
 		input = CharArrayReader.readCharArray(new File("input/5/input.txt"));
 		System.out.println("Solution Day 5, Part 1 : " + part1(input));
 		System.out.println("Solution Day 5, Part 2 : " + part2(input));

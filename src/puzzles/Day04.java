@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Day4 {
+public class Day04 {
 	List<Passport> input;
 	
-	public Day4() {
+	public Day04() {
 		input = readPassword(new File("input/4/input.txt"));
 		System.out.println("Solution Day 4, Part 1 : " + part1(input));
 		System.out.println("Solution Day 4, Part 2 : " + part2(input));

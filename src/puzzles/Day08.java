@@ -9,10 +9,10 @@ import java.util.Optional;
 
 import input_reader.StringIntegerPairListReader;
 
-public class Day8 {
+public class Day08 {
 	
 	List<Map.Entry<String, Integer>> input;
-	public Day8() {
+	public Day08() {
 		input = StringIntegerPairListReader.readStringIntegerPairList(new File("input/8/input.txt"));
 		System.out.println("Solution Day 8, Part 1 : " + part1(input));
 		System.out.println("Solution Day 8, Part 2 : " + part2(input));

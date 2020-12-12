@@ -5,10 +5,10 @@ import java.util.HashSet;
 
 import input_reader.IntegerListReader;
 
-public class Day1 {
+public class Day01 {
 	int[] input;
 
-	public Day1() {
+	public Day01() {
 		super();
 		input = IntegerListReader.readIntList(new File("input/1/input.txt"));
 		System.out.println("Solution Day 1, Part 1 : " + part1(input, 2020));

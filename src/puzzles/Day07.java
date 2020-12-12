@@ -11,10 +11,10 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 
-public class Day7 {
+public class Day07 {
 	Map<String,Map<String, Integer>> input;
 	
-	public Day7() {
+	public Day07() {
 		input = readRules(new File("input/7/input.txt"));
 		System.out.println("Solution Day 7, Part 1 : " + part1(input, "shiny gold"));
 		System.out.println("Solution Day 7, Part 2 : " + part2(input, "shiny gold", 1));

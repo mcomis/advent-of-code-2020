@@ -7,10 +7,10 @@ import java.util.Set;
 
 import input_reader.LongListReader;
 
-public class Day9 {
+public class Day09 {
 	List<Long> input;
 	
-	public Day9() {
+	public Day09() {
 		input = LongListReader.readLongList(new File("input/9/input.txt"));
 		System.out.println("Solution Day 9, Part 1 : " + part1(input, 25));
 		System.out.println("Solution Day 9, Part 2 : " + part2(input, part1(input, 25)));

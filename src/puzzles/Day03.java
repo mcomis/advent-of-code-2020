@@ -4,11 +4,11 @@ import java.io.File;
 
 import input_reader.CharArrayReader;
 
-public class Day3 {
+public class Day03 {
 	char[][] input;
 	final int[][] slopes = {{1,1},{3,1},{5,1},{7,1},{1,2}};
 	
-	public Day3() {
+	public Day03() {
 		input = CharArrayReader.readCharArray(new File("input/3/input.txt"));
 		System.out.println("Solution Day 3, Part 1 : " + part1(input));
 		System.out.println("Solution Day 3, Part 2 : " + part2(input, slopes));

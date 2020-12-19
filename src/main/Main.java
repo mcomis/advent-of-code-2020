@@ -17,7 +17,8 @@ package main;
 //import puzzles.Day15;
 //import puzzles.Day16;
 //import puzzles.Day17;
-import puzzles.Day18;
+//import puzzles.Day18;
+import puzzles.Day19;
 
 public class Main {
 
@@ -39,7 +40,8 @@ public class Main {
 //		new Day15();
 //		new Day16();
 //		new Day17();
-		new Day18();
+//		new Day18();
+		new Day19();
 	}
 
 }

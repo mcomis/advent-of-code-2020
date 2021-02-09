@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -44,6 +45,7 @@ public class Day20 {
 		for (char[][] image : getOrientations(_base_image)) {
 			if(findMonsters(image) > 0) {
 				//assume that there are only monsters in exactly one orientation
+// 				printImage(image);
 				return countRoughWaters(image);
 			}
 		}
@@ -212,6 +214,12 @@ public class Day20 {
 			tile[i]=lines.get(i);
 		}
 		return tile;		
+	}
+	
+	protected void printImage(char[][] image) {
+		for(char[] row : image) {
+			System.out.println(Arrays.toString(row).replaceAll("[,\\s\\[\\]]", ""));
+		}
 	}
 	
 }

@@ -67,6 +67,7 @@ public class Day22 {
 			if (!known.add(count2)) return true; //loop found 
 			map.put(count1, known);
 			
+			//play round
 			int c1 = d1.poll();
 			int c2 = d2.poll();
 			//do we recurse?
@@ -80,7 +81,7 @@ public class Day22 {
 					d2.offer(c2);
 					d2.offer(c1);
 				}
-			//no recursion simple combat
+			//no recursion, simple combat
 			} else {
 				if (c1>c2) {
 					d1.offer(c1);
